@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reuben Ogbuani | Senior Fullstack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              ubuntu: ['Ubuntu', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                mint: '#24D094',
+                pink: '#F4A6FA',
+                light: '#E6E6E6',
+                gold: '#997C4D',
+                navy: '#344464',
+                dark: '#041431',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #E6E6E6;
+            color: #041431;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #24D094 0%, #F4A6FA 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #E6E6E6; }
+        ::-webkit-scrollbar-thumb { background: #041431; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #24D094; }
+
+        .glass-dark {
+            background: rgba(4, 20, 49, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(36, 208, 148, 0.1);
+        }
+        .glass-light {
+            background: rgba(230, 230, 230, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(4, 20, 49, 0.1);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
