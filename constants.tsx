@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { 
-  Users, 
+import {
+  Users,
   Cpu,
   Layout,
   BrainCircuit
@@ -105,7 +105,7 @@ export const PROJECTS: Project[] = [
     outcome: "Accelerated the clinical diagnosis cycle and improved record accuracy across regional medical facilities.",
     tech: ["Fullstack", "Database Management", "Security"],
     image: "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&q=80&w=800",
-    url: "https://funtom-medicals.com.ng"
+    url: "https://funtom-medical.com.ng"
   }
 ];
 
