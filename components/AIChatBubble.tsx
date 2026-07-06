@@ -34,7 +34,7 @@ const AIChatBubble: React.FC = () => {
   return (
     <div className="fixed bottom-8 right-8 z-[9999]">
       {/* Bubble Trigger */}
-      <button
+      <button 
         onClick={() => setIsOpen(!isOpen)}
         className={`w-16 h-16 rounded-[22px] flex items-center justify-center shadow-2xl transition-all duration-500 ${isOpen ? 'bg-brand-pink rotate-90 scale-90' : 'bg-brand-mint hover:bg-brand-pink hover:scale-110 shadow-brand-mint/20'}`}
       >
@@ -59,7 +59,7 @@ const AIChatBubble: React.FC = () => {
 
           {/* Messages */}
           <div ref={scrollRef} className="flex-1 overflow-y-auto p-7 space-y-6 bg-brand-dark/40">
-            {messages.map((msg: Message, i: number) => (
+            {messages.map((msg, i) => (
               <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`flex gap-4 max-w-[90%] ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}>
                   <div className={`w-8 h-8 rounded-lg flex-shrink-0 flex items-center justify-center mt-1 ${msg.role === 'user' ? 'bg-brand-pink' : 'bg-brand-mint'}`}>
@@ -84,15 +84,15 @@ const AIChatBubble: React.FC = () => {
           {/* Input */}
           <div className="p-7 bg-brand-navy/30 border-t border-white/5">
             <div className="flex gap-4">
-              <input
-                type="text"
+              <input 
+                type="text" 
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 onKeyPress={e => e.key === 'Enter' && handleSend()}
                 placeholder="Query experience database..."
                 className="flex-1 bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-sm text-white placeholder:text-brand-light/20 focus:outline-none focus:border-brand-mint transition-colors"
               />
-              <button
+              <button 
                 onClick={handleSend}
                 disabled={isLoading}
                 className="w-14 h-14 rounded-xl bg-brand-mint flex items-center justify-center text-brand-dark hover:bg-brand-pink disabled:opacity-50 transition-all shadow-xl shadow-brand-mint/10"

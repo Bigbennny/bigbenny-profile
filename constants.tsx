@@ -1,7 +1,7 @@
 
 import React from 'react';
-import {
-  Users,
+import { 
+  Users, 
   Cpu,
   Layout,
   BrainCircuit
@@ -10,18 +10,33 @@ import { Experience, Project, SkillGroup } from './types';
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Mercor",
+    role: "Agentic Code Writer (Remote)",
+    period: "Feb 2026 – Present",
+    description: [
+      "Leverage AI-powered development tools to write, optimize, and maintain code across diverse technology stacks.",
+      "Collaborate with cross-functional teams to deliver software solutions that meet client specifications.",
+      "Implement best practices for code quality, testing, and documentation.",
+      "Apply software design patterns to create scalable and maintainable solutions.",
+      "Utilize multiple AI models to accelerate development cycles while ensuring high-quality deliverables."
+    ],
+    impact: "Accelerated enterprise-grade delivery timelines and maintained clean, high-availability codebases across diverse stacks using agentic AI workflows.",
+    tech: ["AI-powered Development", "AI Models", "Software Design Patterns", "Multi-stack Engineering", "Agentic Workflows", "Prompt Engineering"]
+  },
+  {
     company: "United Nations",
     role: "Senior Fullstack Engineer (Remote)",
     period: "July 2022 – Dec 2025",
     description: [
-      "Led fullstack revamp of internal document management portal using React.js, Node.js, SOLR, and microservices architecture, emphasizing reliability and unit testing.",
-      "Collaborated across international teams (Cross-team Collaboration) using Agile Methodologies and GitHub to deliver complex project designs.",
-      "Developed and documented scalable APIs (API Development & Documentation) improving global data accessibility.",
-      "Leveraged Artificial Intelligence (AI) and Python for advanced document indexing and automated problem solving.",
-      "Managed back-end web development lifecycle with NPM, SQL, and NoSQL databases for mission-critical systems."
+      "Led fullstack revamp of internal document management portal using React, Node.js, and Apache Solr.",
+      "Developed scalable APIs for third-party integrations, improving data retrieval speed by 40%.",
+      "Collaborated with global teams via Jira and MS Teams, ensuring seamless deployment and testing.",
+      "Developed RESTful internal and third-party APIs with integrations, database creation, and queries optimization to improve overall system performance, as well as scalable backend services and microservices architectures.",
+      "Emphasized logging, monitoring, and error handling to maintain uptime and resilience in production systems.",
+      "Used AI Models to decrease development time by more than 50%, while optimizing existing codebase and generating robust API documentation."
     ],
     impact: "Improved data retrieval performance by 40% and reduced dev cycles by 50% through strategic AI integration and project design.",
-    tech: ["React.js", "Node.js", "SOLR", "Python", "SQL", "NoSQL", "API Development", "Microservices", "Unit Testing", "Agile", "JSX", "HTML5", "CSS", "GitHub", "NPM", "AI"],
+    tech: ["React", "Node.js", "Apache Solr", "Python", "SQL", "NoSQL", "API Development", "Microservices", "Unit Testing", "Agile", "GitHub", "NPM", "AI", "Jira", "MS Teams", "Logging & Monitoring"],
     links: [
       { label: "UN Documents Portal", url: "https://documents.un.org" },
       { label: "UN Search System", url: "https://search.un.org" }
@@ -32,10 +47,9 @@ export const EXPERIENCES: Experience[] = [
     role: "Senior Fullstack Engineer",
     period: "June 2021 – 2022",
     description: [
-      "Lead Frontend Engineer for Inter-Banking solutions using React JS and TypeScript, delivering robust features with JSX and modern JavaScript.",
-      "Spearheaded back-end web development using Node JS and Express JS, managing SQL, NoSQL, XML, and JSON data layers.",
-      "Architected microservices and third-party APIs while maintaining high reliability through unit testing, Docker, and Sonar Cloud.",
-      "Facilitated cross-team collaboration and communication within Agile Methodologies, leveraging AI-assisted development and CI/CD pipelines to solve complex problems."
+      "Collaborated with other Fullstack engineers to develop an Inter-Banking and integrations banking solution (React, Node JS, and Typescript) as lead frontend engineer.",
+      "Team lead in development of mobile applications (Medical Scheduling Application, Tractor Booking, Blood Bank Management, and others alike).",
+      "Handled internal and third-party API creation and integration, database creation, query optimization, and scalable backend services."
     ],
     impact: "Led front-end architecture for critical inter-banking systems and improved deployment reliability through CI/CD and Sonar Cloud.",
     tech: ["React JS", "Node JS", "Express JS", "TypeScript", "SQL", "NoSQL", "Docker", "CI/CD", "AI-assisted development", "Sonar Cloud", "Agile", "Unit Testing", "JSON", "XML", "JSX", "npm", "JavaScript"]
@@ -45,10 +59,11 @@ export const EXPERIENCES: Experience[] = [
     role: "Intermediate to Senior Fullstack Developer",
     period: "2010 – 2020",
     description: [
-      "Supervised implementation of mission-critical projects including Oil-Well Sampling and Meteorological Forecasting apps across Web, Windows, and Mobile.",
-      "Project ownership of Schools Management, Payroll, and Medical Lab Scheduling systems; provided mentoring to junior engineers.",
-      "Architected enterprise-grade systems using VB.Net, C#, and Java, managing complex databases on SQL Server, Oracle, and MySQL.",
-      "Handled full-cycle hardware and network infrastructure setup and maintenance, including AWS cloud deployments."
+      "Supervised implementation of several projects, on-site and off-site, including Schools Management, Oil-Well Sampling, Payroll, Medical Labs, and Financial systems.",
+      "Developed and maintained several web applications (Full-Stack Development) from design to implementation and hosting, including robust database design.",
+      "On-Site Projects Management, including setup of networks, computers, and other peripheral devices.",
+      "Headed project maintenance of each package from delivery till expiration of test period and subsequent maintenance of applications.",
+      "Worked with and managed high-traffic databases, including schema design, query optimization, and safe migrations."
     ],
     impact: "A decade of delivering diverse enterprise solutions and mentoring teams across multiple platforms.",
     tech: ["VB.Net", "C#", "React Native", "TypeScript", "SQL Server", "Oracle", "MySQL", "AWS", "Java", "JSON", "XML", "Mentoring", "Windows Dev", "Mobile Dev", "Web Dev", "Networking", "Hardware"]
@@ -105,34 +120,34 @@ export const PROJECTS: Project[] = [
     outcome: "Accelerated the clinical diagnosis cycle and improved record accuracy across regional medical facilities.",
     tech: ["Fullstack", "Database Management", "Security"],
     image: "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&q=80&w=800",
-    url: "https://funtom-medical.com.ng"
+    url: "https://funtom-medicals.com.ng"
   }
 ];
 
 export const SKILLS: SkillGroup[] = [
   {
-    category: "AI Models & Productivity",
-    skills: ["Cline", "Gemini", "AI Studio", "ChatGPT", "GitHub CoPilot", "AI-Assisted Dev"]
+    category: "AI Models & Tools",
+    skills: ["Cline", "ChatGPT", "CoPilot", "Google Gemini", "AI Studio", "AI-Assisted Dev"]
   },
   {
     category: "Frontend",
-    skills: ["React.js", "Next.js", "Vue", "Angular", "TypeScript", "SCSS", "HTML5", "JSX", "jQuery"]
+    skills: ["React", "Vue", "Angular", "Next.js", "SCSS", "HTML5", "CSS3", "jQuery", "JSX"]
   },
   {
     category: "Backend",
-    skills: ["Node.js", "NestJS", "Express", "PHP", "Java", "C#", "VB.NET", "Python", "API Dev"]
+    skills: ["Node.js (JavaScript & Typescript)", "Express", "NestJS", "PHP", "Java", "C#", "VB.NET", "Python"]
   },
   {
     category: "Databases",
-    skills: ["PostgreSQL", "MongoDB", "MySQL", "SQL Server", "NoSQL", "Firebase", "Oracle"]
+    skills: ["PostgreSQL", "MongoDB", "MySQL", "SQL Server", "Firebase", "Oracle", "NoSQL"]
   },
   {
     category: "Mobile & DevOps",
-    skills: ["React Native", "Android (Java)", "Docker", "GitHub Actions", "Unit Testing", "SonarCloud"]
+    skills: ["React Native", "Android (Java)", "GitHub Actions", "Docker", "SonarCloud", "Netlify", "CI/CD"]
   },
   {
-    category: "Soft Skills & Process",
-    skills: ["Teamwork", "Agile", "Cross-team Collaboration", "Problem Solving", "Project Design", "Communication"]
+    category: "Systems & Design",
+    skills: ["Figma", "CorelDraw", "UI/UX Implementation", "API Development & Documentation", "Agile/Scrum", "Team Leadership", "Chrome Extensions", "Database Optimization", "Schema Design", "Jira", "MS Teams"]
   }
 ];
 
